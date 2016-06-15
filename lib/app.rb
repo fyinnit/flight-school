@@ -22,7 +22,6 @@ class FlightSchool < Sinatra::Base
     begin
       airport_status = Radar.status_for(params[:code])
       json code: airport_status.code,
-      dsfafsafsadfsad
         name: airport_status.name,
         city: airport_status.city,
         weather: airport_status.weather
